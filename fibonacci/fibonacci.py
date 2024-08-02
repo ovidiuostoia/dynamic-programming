@@ -10,10 +10,10 @@ def fib(n: int, memo: dict = {}):
     
 
 def main():
-    print(fib(7))
-    print(fib(20))
-    print(fib(50))
-    print(fib(100))
+    print(fib(7)) # 13
+    print(fib(20)) # 6765
+    print(fib(50)) # 12586269025
+    print(fib(100)) # 354224848179261915075
 
 if __name__ == "__main__":
     main()
