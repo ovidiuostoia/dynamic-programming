@@ -13,8 +13,8 @@
 Python does not support function overloading and using a default empty dict for the `memo` object is not feasible because the default assignment is made only the first time the function is called. See more info [here](https://discuss.python.org/t/why-does-the-variable-in-the-function-retain-its-value/23640).  Instead use this way:
 
 ```python
-def canSum(targetsum: int, numbers: list[int], memo = None):
+def canSum(targetSum: int, numbers: list[int], memo = None):
     if memo is None:
         memo = {}
-    # rest of the code here
+    # rest of the code goes here
 ```
