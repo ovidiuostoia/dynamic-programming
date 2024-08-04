@@ -1,4 +1,6 @@
-def fib(n: int, memo: dict = {}):
+def fib(n: int, memo = None):
+    if memo is None:
+        memo = {}
     if n in memo:
         # print(f"read from memo: {n} with value {memo[n]}")
         return memo[n]

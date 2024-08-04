@@ -1,4 +1,6 @@
-def gridTraveler(m: int, n: int, memo: dict = {}):
+def gridTraveler(m: int, n: int, memo = None):
+    if memo is None:
+        memo = {}
     if m == 0 or n == 0:
         return 0
     if m == 1 and n == 1:
